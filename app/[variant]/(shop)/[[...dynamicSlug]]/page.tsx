@@ -11,7 +11,6 @@ export default UIGeneralPage;
 export const generateStaticParams = async () => {
   return [
     { variant: "no-variant", dynamicSlug: [""] },
-    { variant: "no-variant", dynamicSlug: ["who-we-are"] },
     { variant: "no-variant", dynamicSlug: ["about"] },
     { variant: "no-variant", dynamicSlug: ["contact"] },
   ];

@@ -12,7 +12,6 @@ export const UIHeader = (p: any) => {
         <Link href="/">Home</Link>
         <Link href="shop">shop</Link>
         <Link href="product">product</Link>
-        <Link href="/who-we-are">who we are</Link>
         <Link href="/about">about</Link>
         <Link href="/contact">contact</Link>
         {/* <UILink to="/">Home v2</UILink>
