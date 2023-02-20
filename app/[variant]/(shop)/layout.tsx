@@ -1,16 +1,20 @@
-import UIHeader from "./UIHeader";
+import Link from "next/link";
 
-const UIPage = async ({ children }: any) => {
+export default function Page({ children }: any) {
   return (
-    <main id="main" className="min-h-screen">
-      <UIHeader />
+    <>
+      <ul>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/shop">shop</Link>
+        </li>
+        <li>
+          <Link href="/product">product</Link>
+        </li>
+      </ul>
       {children}
-    </main>
+    </>
   );
-};
-
-export default UIPage;
-
-// export const dynamicParams = false // true | false,
-// export const revalidate = 300 // revalidate this page every 5 minutes
-//export const dynamic = 'force-static'
+}
